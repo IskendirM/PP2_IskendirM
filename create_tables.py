@@ -5,10 +5,10 @@ def create_tables():
     """ Create tables in the PostgreSQL database"""
     commands = (
         """
-        CREATE TABLE Numbers (
-            person_id SERIAL PRIMARY KEY,
-            person_name VARCHAR(255) NOT NULL,
-            person_phone VARCHAR(255) NOT NULL
+        CREATE TABLE Players (
+            player_id SERIAL PRIMARY KEY,
+            username VARCHAR(255) NOT NULL,
+            score VARCHAR(255) NOT NULL
         );
         """,
     )
